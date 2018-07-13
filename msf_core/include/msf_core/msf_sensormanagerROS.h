@@ -215,7 +215,7 @@ struct MSF_SensorManagerROS : public msf_core::MSF_SensorManager<EKFState_T> {
       msgOdometry.header.stamp = ros::Time(state->time);
       msgOdometry.header.seq = msg_seq++;
       msgOdometry.header.frame_id = msf_output_frame_;
-      msgOdometry.child_frame_id = "imu";
+      msgOdometry.child_frame_id = "pixhawk_imu";
       state->ToOdometryMsg(msgOdometry);
       pubOdometry_.publish(msgOdometry);
 

@@ -200,7 +200,8 @@ class PoseSensorManager : public msf_core::MSF_SensorManagerROS<
       q = q_wv;
     } else {  // If there is a pose measurement, apply q_ic and q_wv to get initial attitude.
       q = (q_ic * q_cv.conjugate() * q_wv).conjugate();
-      std::cout << "q = " << q.x << '\n';
+      std::cout << "q.w =  " << q.w() << '\n';
+      std::cout <<"q_x, q_y, q_z = " << q.vec() << '\n';
     }
 
     q.normalize();

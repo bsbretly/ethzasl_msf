@@ -169,7 +169,7 @@ class PoseSensorManager : public msf_core::MSF_SensorManagerROS<
     q_wv.w() = 0.707;
     q_wv.x() = 0.0;
     q_wv.y() = 0.0;
-    q_wv.z() = 0.707;
+    q_wv.z() = -0.707;
     p_wv.setZero();  // Vision-world position drift.
 
     P.setZero();  // Error state covariance; if zero, a default initialization in msf_core is used

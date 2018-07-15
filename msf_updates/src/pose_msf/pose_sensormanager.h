@@ -29,6 +29,7 @@
 
 #include "sensor_fusion_comm/InitScale.h"
 #include "sensor_fusion_comm/InitHeight.h"
+#include <iostream>
 
 namespace msf_pose_sensor {
 

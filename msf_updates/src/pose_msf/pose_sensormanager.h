@@ -167,8 +167,8 @@ class PoseSensorManager : public msf_core::MSF_SensorManagerROS<
 
     //q_wv.setIdentity();  // Vision-world rotation drift.
     q_wv.w() =  0.704;
-    q_wv.x() = 0.062;
-    q_wv.y() = -0.062;
+    q_wv.x() = -0.062;
+    q_wv.y() = 0.062;
     q_wv.z() = -0.704;
     p_wv.setZero();  // Vision-world position drift.
 

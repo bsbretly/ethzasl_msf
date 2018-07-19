@@ -166,8 +166,8 @@ class PoseSensorManager : public msf_core::MSF_SensorManagerROS<
     w_m << 0, 0, 0;		/// Initial angular velocity.
 
     //q_wv.setIdentity();  // Vision-world rotation drift.
-    q_wv.w() = 1.0; //0.696;
-    q_wv.x() = 0.0; //0.123;
+    q_wv.w() = 0.985; //0.696;
+    q_wv.x() = 0.174; //0.123;
     q_wv.y() = 0.0; //-0.123;
     q_wv.z() = 0.0; //0.696;
     p_wv.setZero();  // Vision-world position drift.
